@@ -1,9 +1,9 @@
 /*
-    File: 01_arrays.c
+    File: 01__1d_arrays.c
     Author: Jason Pandian
     Created on: 11-02-2024
     Modified on: 11-02-2024
-    Description: This program demonstrates basic array operations in C.
+    Description: This program demonstrates dynamic 1d array operations in C.
 */
 
 #include <stdio.h>
@@ -18,6 +18,7 @@ int main(void)
     int *dArray = (int*) malloc(size * sizeof(int));
     if (dArray == NULL) {
         printf("Memory Allcocation failed to initialized.\n");
+        return 1;
     }
 
     printf("Display the size of the dynamic 1d array in %lu \n", size * sizeof(int));
