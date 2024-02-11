@@ -20,7 +20,6 @@ int main(void)
         printf("Memory Allcocation failed to initialized.\n");
         return 1;
     }
-
     printf("Display the size of the dynamic 1d array in %lu \n", size * sizeof(int));
 
     printf("Enter the elements in the dynamic 1d array: \n");
