@@ -43,7 +43,6 @@ int main(void)
         }printf("\n");
 
     }
-    printf("\n");
 
     for (int i = rows - 1; i >= 0; --i) {
         free(dArray2D[i]);
