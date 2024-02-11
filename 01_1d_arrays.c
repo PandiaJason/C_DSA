@@ -12,32 +12,27 @@
 int main(void)
 {
     int size;
-    printf("Enter the size of the array: ");
+    printf("Enter the size of the dynamic 1d array: ");
     scanf("%d", &size);
 
-    int *dArray = (int*) malloc(size * sizeof(int)); 
-
+    int *dArray = (int*) malloc(size * sizeof(int));
     if (dArray == NULL) {
-        printf("Memory Allocation failed \n");
-        return 1;
+        printf("Memory Allcocation failed to initialized.\n");
     }
 
-    printf("Size of the dynamically allocated array: %lu bytes\n", size * sizeof(int));
+    printf("Display the size of the dynamic 1d array in %lu \n", size * sizeof(int));
 
+    printf("Enter the elements in the dynamic 1d array: \n");
     for (int i = 0; i < size; ++i) {
         scanf("%d", &dArray[i]);
     }
 
+    printf("Displaying the  dynamic 1d array by elements: ");
     for (int i = 0; i < size; ++i) {
         printf("%d ", dArray[i]);
     }
 
     printf("\n");
 
-    printf("Size of the dynamically allocated array: %d bytes\n", dArray);
-
-
-    free(dArray);
-
-    return 0;
+    return 0;    
 }
