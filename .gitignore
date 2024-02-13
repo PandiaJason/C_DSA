@@ -36,6 +36,10 @@
 *.x86_64
 *.hex
 
+#-save-temps
+*.s
+*.i
+
 # Debug files
 *.dSYM/
 *.su
