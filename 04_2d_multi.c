@@ -41,7 +41,7 @@ int main(void)
                 add = mult + temp;
                 temp = add;
 
-            // printf("matrix1[%d][%d] * matrix2[%d][%d] = %3d  \n", i, k, k, j, (matrix1[i][k] * matrix2[k][j]));
+            /* printf("matrix1[%d][%d] * matrix2[%d][%d] = %3d  \n", i, k, k, j, (matrix1[i][k] * matrix2[k][j])); */
 
 
             }
